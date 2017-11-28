@@ -13,6 +13,6 @@ module Ejercicio3
     end
   end
 end
-# string1 = 'a','b','c'
-# string2 = 'o'
-# Ejercicio3.alternativo(string1,string2)
+#string1 = 'a', 'd', 'c'
+#string2 = 's'
+#Ejercicio3.alternativo(string1, string2)
