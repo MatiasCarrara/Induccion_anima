@@ -19,6 +19,6 @@ module Exercise4
     end
   end
 end
-string1 = 'a', 'b', 'c', 'd', 'e'
-string2 = 0
-Exercise4.hola(string1, string2)
+#string1 = 'a', 'b', 'c', 'd', 'e'
+#string2 = 0
+#Exercise4.hola(string1, string2)
