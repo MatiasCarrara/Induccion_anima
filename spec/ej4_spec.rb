@@ -21,7 +21,7 @@ describe Exercise4 do
       it '' do
         string1 = 'a', 'b', 'c', 'd', 'e'
         string2 = 0
-        expect(Exercise4.hola(string1, string2)).to eql(puts('NADA'))
+        expect(Exercise4.hola(string1, string2)).to eql(puts('nothing'))
       end
     end
     context '' do

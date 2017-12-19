@@ -15,10 +15,10 @@ module Exercise4
         end
       end
     else
-      puts 'NADA'
+      puts 'nothing'
     end
   end
 end
-string1 = 'a', 'b', 'c', 'd', 'e'
-string2 = 3
-Exercise4.hola(string1, string2)
+#string1 = 'a', 'b', 'c', 'd', 'e'
+#string2 = 3
+#Exercise4.hola(string1, string2)
