@@ -1,18 +1,15 @@
 # ej3.rb
-module Ejercicio3
-  def self.alternativo(hola, lol)
-    @hola = hola
-    @raul = lol
-    @hola.each do |here|
-      @chau = @raul if @raul == here
+module Exercise3
+  def self.alternativo(alpha, beta)
+    @alpha = alpha
+    @beta = beta
+    @alpha.each do |here|
+      @chau = @beta if @beta == here
     end
-    if @chau == @raul
+    if @chau == @beta
       puts true
     else
       puts false
     end
   end
 end
-#string1 = 'a', 'd', 'c'
-#string2 = 's'
-#Ejercicio3.alternativo(string1, string2)
