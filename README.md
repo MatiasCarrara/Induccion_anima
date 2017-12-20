@@ -1,15 +1,14 @@
 # Induccion_anima
 ## Methods
 
-######`def initialize(folk)`
-      le asigna a `@flok` el valor del `folk`
+######`def initialize(size)`
+      assigns `@ size` the value of` size`
 
 
-######`def tell`    
-1.  primero pregunta si `@flok` responde a `length`, y en caso de que no sea asi, ratorna `'hi'`
+######`def to_size`    
 
-2. luego asigna a `this` el valor de `@folk`
+1. assign `this` the value of` @ size`
 
-3. a continuacion hace un `if` y pregunta si `@folk` responde a `each`
-  3. prueba
-4. muestra `this`
+2. then do an `if` and ask if` @ size` responds to `each`
+   2. test
+3. shows `this`
