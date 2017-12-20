@@ -7,7 +7,7 @@ describe Exercise4 do
       it 'haaaaaaaa' do
         string1 = 'a', 'b', 'c', 'd', 'e'
         string2 = 3
-        expect(Exercise4.hola(string1, string2)).to eql(puts('a', 'b', 'c')) # eql(puts @juan)
+        expect(Exercise4.hola(string1, string2)).to eql(puts('a', 'b', 'c')) 
       end
     end
     context '' do
