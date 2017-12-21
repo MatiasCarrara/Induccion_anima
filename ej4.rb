@@ -1,17 +1,15 @@
-# ej4.rb
 module Exercise4
-  def self.hola(gg, lol)
-    @juan = gg
-    @pedro = lol
-    @pedro -= 1
-    @yo = 0
-    if @pedro > -1
-      if @pedro > @juan.length
-        puts @juan
+  def self.hola(alphs, beta)
+    @alpha = alphs
+    @beta = beta -= 1
+    @var = 0
+    if @beta > -1
+      if @beta > @alpha.length
+        puts @alpha
       else
-        while @juan[@yo] <= @juan[0 + @pedro]
-          puts @juan[@yo]
-          @yo += 1
+        while @var <= @beta
+          puts @alpha[@var]
+          @var += 1
         end
       end
     else
@@ -19,6 +17,3 @@ module Exercise4
     end
   end
 end
-string1 = 'a', 'b', '', 'd', 'e'
-string2 = 3
-Exercise4.hola(string1, string2)

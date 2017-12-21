@@ -1,5 +1,4 @@
-# ej4_spec.rb
-require '/home/mooveit/MyGit/Induccion_anima/ej4.rb'
+require_relative '/Users/matiascarrara/Git/Induccion_anima/ej4.rb'
 
 describe Exercise4 do
   describe '.hola' do
@@ -7,7 +6,7 @@ describe Exercise4 do
       it 'haaaaaaaa' do
         string1 = 'a', 'b', 'c', 'd', 'e'
         string2 = 3
-        expect(Exercise4.hola(string1, string2)).to eql(puts('a', 'b', 'c')) 
+        expect(Exercise4.hola(string1, string2)).to eql(puts('a', 'b', 'c'))
       end
     end
     context '' do
