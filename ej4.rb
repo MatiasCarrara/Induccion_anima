@@ -1,5 +1,5 @@
 module Exercise4
-  def self.hola(alphs, beta)
+  def self.take(alphs, beta)
     @alpha = alphs
     @beta = beta -= 1
     @var = 0
