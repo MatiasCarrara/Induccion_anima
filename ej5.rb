@@ -1,5 +1,5 @@
 module Exercise5
-  def self.case(text)
+  def self.upper_lower(text)
     @var = 0
     @here = 0
     content = ''
