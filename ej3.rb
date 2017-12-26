@@ -1,15 +1,13 @@
 # ej3.rb
 module Exercise3
-  def self.alternativo(alpha, beta)
-    @alpha = alpha
-    @beta = beta
-    @alpha.each do |here|
-      @chau = @beta if @beta == here
+  def self.contains?(array, to_verify)
+    array.each do |here|
+      @var = to_verify if to_verify == here
     end
-    if @chau == @beta
-      puts true
+    if @var == to_verify
+      true
     else
-      puts false
+      false
     end
   end
 end
