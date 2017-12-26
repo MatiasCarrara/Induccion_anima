@@ -1,25 +1,25 @@
-require '/home/mooveit/MyGit/Induccion_anima/ej1.rb'
+require_relative '/Users/matiascarrara/Git/Induccion_anima/ej1.rb'
 
-describe Long do
-  describe '.to_size' do
+describe Exercise1 do
+  describe '.biggest' do
     context 'Single word' do
       it 'that same word' do
-        expect(Long.new(['hola']).tell).to eq('hola')
+        expect(Exercise1.biggest(['hola'])).to eql(puts('hola'))
       end
     end
     context 'more than one word' do
       it 'it is the longest word' do
-        expect(Long.new(%w[Matias Valentina]).tell).to eq('Valentina')
+        expect(Exercise1.biggest(%w[Matias Valentina])).to eql(puts('Valentina'))
       end
     end
     context 'two equal words' do
       it 'the first written word' do
-        expect(Long.new(%w[Mati Vale]).tell).to eq('Mati')
+        expect(Exercise1.biggest(%w[Mati Vale])).to eql(puts('Mati'))
       end
     end
     context 'not any word' do
       it 'does not return anything' do
-        expect(Long.new(['']).tell).to eq('')
+        expect(Exercise1.biggest([''])).to eql(puts(''))
       end
     end
   end

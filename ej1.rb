@@ -1,17 +1,11 @@
-class Long
-  attr_accessor :size
-  def initialize(size)
-    @size = size
-  end
-
-  def to_size
-    this = @size
-    if @size.respond_to?('each')
-      this = @size.first
-      @size.each do |var|
-        var.length > this.length ? this = var : this
-      end
+module Exercise1
+  def self.biggest(data)
+    @data = data
+    longest = @data.first
+    @data.each do |var|
+      var.length > longest.length ? longest = var : longest
     end
-    this
+  puts longest
   end
 end
+Exercise1.biggest(%w[Matias Valentina])
