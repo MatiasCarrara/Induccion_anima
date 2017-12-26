@@ -1,9 +1,9 @@
 module Exercise5
-  def self.letras(alpha)
+  def self.case(alpha)
     @alpha = alpha
     @var = 0
     @here = 0
-    while @var <= @alpha.length
+    while @var < @alpha.length
       if @alpha[0 + @here] == @alpha[0 + @here].upcase
         puts @alpha[0 + @here].downcase
       else
@@ -14,4 +14,3 @@ module Exercise5
     end
   end
 end
-Exercise5.letras("mAtIAs")
