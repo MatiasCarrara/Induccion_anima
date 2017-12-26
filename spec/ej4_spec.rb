@@ -18,13 +18,6 @@ describe Exercise4 do
         expect(Exercise4.take(string1, string2)).to eql(string3)
       end
     end
-    context 'we passed a string with the character 0' do
-      it 'returns "nothing", because position 0 does not exist' do
-        string1 = 'a', 'b', 'c', 'd', 'e'
-        string2 = 0
-        expect(Exercise4.take(string1, string2)).to eql('nothing')
-      end
-    end
     context 'we passed a string with the character 27' do
       it 'shows the entire array' do
         string1 = 'a', 'b', 'c', 'd', 'e'
