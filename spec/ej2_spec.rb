@@ -1,4 +1,4 @@
-require_relative '/home/mooveit/MyGit/Induccion_anima/ej2.rb'
+require_relative '/Users/matiascarrara/Git/Induccion_anima/ej2.rb'
 describe Exercise2 do
   describe '.random' do
       it 'returns a random number between 10.00 and 100.00' do
