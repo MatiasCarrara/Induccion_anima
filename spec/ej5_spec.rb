@@ -2,29 +2,24 @@ require_relative '../ej5.rb'
 describe Exercise5 do
   describe '.upper_lower' do
     context 'a word in capital' do
-      it 'the same word in lowercase' do
-        expect(Exercise5.upper_lower('MATIAS')).to eql('matias')
-      end
+      subject{ Exercise5.upper_lower('MATIAS')}
+      it { is_expected.to eq('matias')}
     end
     context 'a word in lowercase' do
-      it 'the same word in capital' do
-        expect(Exercise5.upper_lower('matias')).to eql('MATIAS')
-      end
+      subject{ Exercise5.upper_lower('matias')}
+      it { is_expected.to eq('MATIAS')}
     end
     context 'pass "mAtIAs"' do
-      it 'return "MaTiaS"' do
-        expect(Exercise5.upper_lower('mAtIAs')).to eql('MaTiaS')
-      end
+      subject{ Exercise5.upper_lower('mAtIAs')}
+      it { is_expected.to eq('MaTiaS')}
     end
     context 'pass numbers' do
-      it 'return the same numbers' do
-        expect(Exercise5.upper_lower('123')).to eql('123')
-      end
+        subject{ Exercise5.upper_lower('123')}
+        it { is_expected.to eq('123')}
     end
     context 'pass nothing' do
-      it 'return nothing' do
-        expect(Exercise5.upper_lower('')).to eql('')
-      end
+      subject{ Exercise5.upper_lower('')}
+      it { is_expected.to eq('')}
     end
   end
 end
