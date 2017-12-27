@@ -2,7 +2,9 @@ module Exercise1
   def self.biggest(data)
     longest = data.first
     data.each do |var|
-      var.length > longest.length ? longest = var : longest
+      if var.length > longest.length
+       longest = var
+     end
     end
     longest
   end
