@@ -1,18 +1,11 @@
 module Exercise4
-  def self.take(alpha, beta)
-    beta -= 1
-    @var = 0
-    here = ''
+  def self.hola(alpha, beta)
     if beta > -1
       if beta > alpha.length
         return  alpha
       else
-        while @var <= beta
-          here += alpha[@var]
-          @var += 1
-        end
+        return alpha[0, beta]
       end
-      return here
     end
   end
 end
