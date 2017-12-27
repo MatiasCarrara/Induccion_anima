@@ -4,7 +4,7 @@ describe Exercise1 do
   describe '.biggest' do
     context 'Single word' do
       it 'that same word' do
-        expect(Exercise1.biggest(['hola'])).to eql(('hola'))
+        expect(Exercise1.biggest(%W[hola])).to eql(("hola"))
       end
     end
     context 'more than one word' do
@@ -19,7 +19,7 @@ describe Exercise1 do
     end
     context 'not any word' do
       it 'does not return anything' do
-        expect(Exercise1.biggest([''])).to eql((''))
+        expect(Exercise1.biggest(%W[])).to eql(nil)
       end
     end
   end
