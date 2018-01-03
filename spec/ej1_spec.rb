@@ -16,7 +16,7 @@ describe Exercise1 do
     end
     context 'we do not pass any word' do
       subject { Exercise1.biggest(%w[]) }
-        it { is_expected.to match (nil) }
+        it { is_expected.to match(nil) }
     end
   end
 end
