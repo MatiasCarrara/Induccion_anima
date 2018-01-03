@@ -1,10 +1,11 @@
+# ej3.rb
 module Exercise4
   def self.select(array, select_num)
     if select_num > -1
-      if select_num > array.length
-        return  array
+      if select_num >= array.length
+        array
       else
-        return array[0, select_num]
+        array[0, select_num]
       end
     end
   end
