@@ -19,7 +19,7 @@ describe Exercise3 do
       it { is_expected.to eq(false) }
     end
     context 'I pass an empty space, in a array with an empty space' do
-      string1 = 'a', 'b', ''
+      let(:string1) { ['a', 'b', ''] }
       let(:string2) { '' }
       subject { Exercise3.contains?(string1, string2) }
       it { is_expected.to eq(true) }
