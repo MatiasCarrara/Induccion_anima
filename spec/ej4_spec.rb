@@ -10,9 +10,9 @@ describe Exercise4 do
       it { is_expected.to eq(string3) }
     end
     context 'we passed a string with the character 4' do
-      string1 = 'a', 'b', 'c', '', 'e'
+      let(:string1) { ['a', 'b', 'c', '', 'e'] }
       let(:string2) { 4 }
-      string3 = 'a', 'b', 'c', ''
+      let(:string3) { ['a', 'b', 'c', ''] }
       subject { Exercise4.select(string1, string2) }
       it { is_expected.to eq(string3) }
     end
